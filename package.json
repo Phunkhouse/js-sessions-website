@@ -1,0 +1,19 @@
+{
+   "name": "js-sessions-blog",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "watch": "gulp & npx @11ty/eleventy --serve",
+      "build": "gulp build; npx @11ty/eleventy"
+   },
+   "keywords": [],
+   "author": "David Krapka",
+   "license": "ISC",
+   "devDependencies": {
+      "@11ty/eleventy": "^0.8.3",
+      "gulp": "^4.0.2",
+      "gulp-sass": "^4.0.2",
+      "node-sass": "^4.12.0"
+   }
+}
