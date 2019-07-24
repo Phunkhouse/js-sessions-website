@@ -12,5 +12,60 @@ html {
 
 body {
    box-sizing: border-box;
+   padding: 2rem 22vw;
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.6rem;
+   font-weight: 300;
    background-color: white;
+}
+
+main {
+   min-height: 75vh;
+}
+
+a {
+   text-decoration: none;
+}
+
+hr {
+   margin: 2rem 10vw;
+   color: rgba(0, 0, 0, .1);
+}
+
+li {
+   padding: .3rem 0;
+
+   &::marker {
+      margin-right: 1rem;
+   }
+}
+
+ul {
+   margin: .5rem 0 .5rem 4rem;
+}
+
+ul ul {
+   margin-left: 2rem;
+}
+
+pre {
+   margin: 3rem;
+   padding: 2rem 3rem;
+   background-color: rgb(217, 243, 255);
+   border-radius: 1rem 0;
+}
+
+code {
+   line-height: 2rem;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   margin-top: 6rem;
+}
+
+.cta {
+   font-size: 1.3rem;
+   letter-spacing: .07rem;
 }

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>{{ pageTitle }} - JS Session briefs</title>
+      <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+   </head>
+   <body>
+      <header>
+         <a href="{{ '/' | url }}" class="home-link"><span class="logo-styled-small">JS</span> Sessions</a>
+      </header>
+      
+      <main>
+         <h1 class="heading--post">{{ pageTitle }}</h1>
+
+         {{ content }}
+      
+         <br>
+         <a href="{{ '/' | url }}" class="cta">&lsaquo; BACK HOME</a>
+      </main>
+
+      <footer>
+         <p>David Krapka - 2019</p>
+      </footer>
+
+      <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,500&display=swap" rel="stylesheet">
+   </body>
+</html>

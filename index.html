@@ -1,9 +1,10 @@
 ---
-layout: layout.liquid
-pageTitle: Welcome to my blog
+layout: home.liquid
 ---
-{% for post in collections.posts %}
-   <h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
-   <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+{% for post in collections.posts reversed %}
    <hr>
+   <h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+   <span class="post-query__date">{{ post.date | date: "%d. %m. %Y" }}</span>
+   <p>{{ post.data.excerpt }}</p>
+   <a href="{{ post.url }}" class="cta">LEARN MORE &rsaquo;</a>
 {% endfor %}

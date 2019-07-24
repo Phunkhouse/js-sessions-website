@@ -1,4 +1,66 @@
-body {
-   font-size: 1.7rem;
-   color: firebrick;
+h1, h2, h3, a {
+   color: rgb(48, 48, 48);
+   font-family: 'Oswald', sans-serif;
+   font-weight: 400;
+}
+
+h1 {
+   padding: 2rem 0 1rem 0;
+   font-size: 10rem;
+   letter-spacing: -.2rem;
+}
+
+h2 {
+   padding: 2.5rem 0 .5rem 0;
+   font-size: 4rem;
+   letter-spacing: -.07rem;
+}
+
+h3 {
+   padding: 1rem 0 .5rem 0;
+   font-size: 2.3rem;
+}
+
+p {
+   padding: 1.5rem 0;
+}
+
+strong {
+   color: rgb(75, 75, 75);
+   font-weight: 500;
+}
+
+.heading--post {
+   font-size: 7rem;
+}
+
+.logo-styled,
+.logo-styled-small {
+   position: relative;
+
+   &::before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      background-color: rgb(217, 243, 255);
+      border-radius: 1rem 0;
+   }
+}
+
+.logo-styled {
+   &::before {
+      top: 2.5rem;
+      left: -.8rem;
+      height: 11rem;
+      width: 9rem;
+   }
+}
+
+.logo-styled-small {
+   &::before {
+      top: 0;
+      left: -.8rem;
+      height: 15.5rem;
+      width: 12rem;
+   }
 }
