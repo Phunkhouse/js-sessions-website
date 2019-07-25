@@ -48,20 +48,20 @@
          &::before {
             top: 0;
             left: -.8rem;
-            height: 15.5rem;
+            height: 15rem;
             width: 12rem;
          }
 
          @include mq-below(phone-lg) {
             &::before {
-               height: 14.5rem;
+               height: 13.5rem;
                width: 11.8rem;
             }
          }
 
          @include mq-below(phone-sm) {
             &::before {
-               height: 12.9rem;
+               height: 12.4rem;
             }
          }
       }

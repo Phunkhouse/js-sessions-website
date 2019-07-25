@@ -8,8 +8,6 @@
 
 html {
    font-size: 10px;
-
-   @include mq-below(phone-lg) { font-size: 9px; }
 }
 
 body {
@@ -18,10 +16,9 @@ body {
    flex-direction: column;
    align-items: center;
    padding: 2rem 4rem;
-   font-family: 'Roboto', sans-serif;
+   font-family: $primary-font;
    font-size: 1.6rem;
-   font-weight: 300;
-   background-color: white;
+   font-weight: $pr-standard-weight;
 
    @include mq-below(desktop-sm) { 
       align-items: flex-start;
@@ -29,7 +26,9 @@ body {
 }
 
 main {
+   position: relative;
    min-height: 75vh;
+   width: 100%;
 }
 
 a {
@@ -82,17 +81,18 @@ ul ul {
 }
 
 pre {
+   display: block;
    margin: 3rem;
    padding: 2rem 3rem;
    background-color: $color-primary;
    border-radius: 1rem 0;
-   white-space: pre-wrap;
-   word-break: keep-all
+   overflow-x: hidden;
 }
 
 code {
    display: block;
    line-height: 2rem;
+   overflow-x: auto;
 }
 
 .cta {
@@ -106,7 +106,7 @@ code {
       position: absolute;
       top: .2rem;
       left: -1.1rem;
-      height: 75%;
+      height: 80%;
       width: .4rem;
       background-color: $color-primary-darker;
    }
@@ -120,14 +120,8 @@ code {
       margin-top: 4rem;
 
       &::before {
-         content: '';
-         position: absolute;
-         top: .2rem;
          left: auto;
-         right: -0.9rem;
-         height: 80%;
-         width: .4rem;
-         background-color: $color-primary-darker;
-   }
+         right: -0.9rem;;
+      }
    }
 }
