@@ -1,6 +1,11 @@
 .header {
    &__home-link {
       font-size: 2.5rem;
+
+      &:hover {
+         color: $color-gray-dark;
+         background-color: transparent;
+      }
    }
 
    &__js-styled {

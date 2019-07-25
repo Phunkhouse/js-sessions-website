@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Sources, Variables and Commenting - JS Sessions briefs</title>
+      <link rel="stylesheet" href="/css/main.css">
+   </head>
+   <body>
+      <header class="header u-wrapper">
+         <a href="/" class="header__home-link">
+            <span class="header__js-styled header__js-styled--small">JS</span> Sessions
+         </a>
+      </header>
+      
+      <main class="u-wrapper">
+         <h1 class="heading--post">Sources, Variables and Commenting</h1>
+
+         <h2>Sources</h2>
+<ul>
+<li><strong>MDN</strong> - most reliable, could be difficult to read, time independent, compatibility bonus
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">https://developer.mozilla.org/en-US/docs/Web/JavaScript</a></li>
+</ul>
+</li>
+<li><strong>W3Schools</strong> - not that reliable, easier to read, time independent
+<ul>
+<li><a href="https://www.w3schools.com/jsref/default.asp">https://www.w3schools.com/jsref/default.asp</a></li>
+</ul>
+</li>
+<li><strong>Stack Overflow</strong> and others - could be faster, beware of time (when the problem there was solved)</li>
+<li>It's often faster to use <strong>Google</strong> then search inside these sources, just be aware that these sources are your primary ones - so search like &quot;[search question] JS&quot; and look for <strong>MDN</strong> and <strong>W3Schools</strong> results</li>
+</ul>
+<h2>Last hour questions</h2>
+<ul>
+<li>What is the variable?</li>
+<li>Declare variable with a string value</li>
+<li>Declare variable and let it compute 10 - 7</li>
+</ul>
+<h2>Finishing Variables</h2>
+<ul>
+<li>There is a difference between <strong>declaring</strong> and <strong>updating</strong> variable value</li>
+<li>you can <strong>update value</strong> of the variable and you can even <strong>add to the original value</strong> (speaking of math), same for other basic matematical operators:</li>
+</ul>
+<pre><code class="language-Javascript">var num = 3;
+
+// More descriptive
+num = num + 3;
+
+// Shortcut
+num += 3;
+</code></pre>
+<h3>CH1: More math</h3>
+<ul>
+<li>create variable <strong>we are doing math</strong> and give it value of some <strong>number</strong></li>
+<li>increase the original value by <strong>25</strong> (so add, not multiply)</li>
+<li>decrease it by <strong>10</strong></li>
+<li>log it</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/RzeMge">solution here</a></li>
+</ul>
+<br>
+<ul>
+<li>You can <strong>insert variables inside a string</strong>. Especially useful to make part of the text <strong>dynamic</strong>:</li>
+</ul>
+<pre><code class="language-Javascript">var logInStatic = 'Hello Robert, You are logged in.';
+
+var user = 'Robert';
+var logInDynamic = 'Hello ' + user + '. You are logged in.';
+</code></pre>
+<h2>Commenting</h2>
+<ul>
+<li>Important for <strong>not getting lost within a code</strong></li>
+<li>Important for temporary <strong>clearing the code and using it later</strong></li>
+<li>Used similarly in HTML and CSS</li>
+<li>Use it like that:</li>
+</ul>
+<pre><code class="language-Javascript">// This is line comment that will work just for this line
+
+/*
+This is block comment:
+   - it is pretty flexible
+   - it is cleaner when you need to comment more lines
+   - and the shortcut in VSCode is SHIFT + ALT + A
+   - so if you want in example comment out piece of code, just select it and use the shortcut
+*/
+</code></pre>
+
+      
+         <br>
+         <a href="/" class="cta cta--post">&lsaquo; BACK HOME</a>
+      </main>
+
+      <footer class="footer u-wrapper">
+         <p class="footer__text">David Krapka, 2019</p>
+      </footer>
+
+      <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,500&display=swap" rel="stylesheet">
+   </body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Conditions - JS Sessions briefs</title>
+      <link rel="stylesheet" href="/css/main.css">
+   </head>
+   <body>
+      <header class="header u-wrapper">
+         <a href="/" class="header__home-link">
+            <span class="header__js-styled header__js-styled--small">JS</span> Sessions
+         </a>
+      </header>
+      
+      <main class="u-wrapper">
+         <h1 class="heading--post">Conditions</h1>
+
+         <h3>Last hour questions</h3>
+<ul>
+<li>Declare variable with some number as a value. Increase its original value by 9000 on the next line.</li>
+<li>Create variable timeNow that is saying 'It is [actual time]'. Because time is constatly changing, place variable time instead of [actual time] string piece, give it a number value of actual time and cocatenate it with the string.</li>
+<li>Create variable test and give it a string hello world. Comment it out. Uncomment it.</li>
+</ul>
+<h3>Conditions</h3>
+<ul>
+<li>You want something to happen only <strong>if certain condition apply</strong></li>
+<li>Example: If user is logged then welcome that user, in JS sense:</li>
+</ul>
+<pre><code class="language-javascript">var isLoggedIn = true;
+if (isLoggedIn === true) {
+   console.log('Welcome user!');
+}
+
+// or shortened
+if (isLoggedIn) {
+   console.log('Welcome user!');
+}
+</code></pre>
+<ul>
+<li><strong>NOTICE:</strong> the difference between = (<strong>assigning a value</strong>) and === (<strong>equality operator</strong> - is something equal?)</li>
+<li><strong>NOTICE:</strong> you could <strong>check</strong> also for the exact <strong>string</strong> or <strong>number</strong> value, It is not mandatory to check just for booleans</li>
+<li>First ask - <strong>IF</strong>, then define a question within <strong>normal brackets</strong>, then do something if condition apply within <strong>curly brackets</strong> (that is a block statement - everything within curly brackets has its own area)</li>
+</ul>
+<br>
+<h3>CH1: Am I a Batman?</h3>
+<ul>
+<li>declare <strong>is batman</strong> variable and set it to true (boolean)</li>
+<li>use the if statement to check whether you are a batman - if yes than log <strong>&quot;I am Batman&quot;</strong></li>
+<li>try to change variable value to false - it shouldn't log anything</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/RzeMge">solution here</a></li>
+</ul>
+<br>
+<ul>
+<li><strong>Comparison operators:</strong></li>
+</ul>
+<pre><code class="language-javascript">// Equal
+(8 === 8)
+('microsoft' === 'microsoft')
+
+// Not equal
+(8 !== 4)
+('Microsoft' !== 'microsoft')
+
+// Greater than
+(8 &gt; 4)
+
+// Less than
+(4 &lt; 8)
+
+// Negative check - NOT
+(!isFilled)
+</code></pre>
+<ul>
+<li>What if I want to set behavior for a state that is <strong>not true</strong>? We use <strong>ELSE</strong> for that:</li>
+</ul>
+<pre><code class="language-javascript">var isLoggedIn = true;
+if (isLoggedIn) {
+   console.log('Welcome user!');
+} else {
+   console.log('Welcome! Please log in.');
+} 
+</code></pre>
+<ul>
+<li><strong>NOTICE:</strong> you don't need to specify else condition (brackets) - because  else is just every other condition than the first one</li>
+</ul>
+<br>
+<h3>CH2: Am I a Batman? 2.0</h3>
+<ul>
+<li>set <strong>is batman</strong> variable to false</li>
+<li>create another condition for that false statement that will log <strong>&quot;I am not batman enough&quot;</strong></li>
+<li>log it</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/QXeNNY">solution here</a></li>
+</ul>
+<br>
+      
+         <br>
+         <a href="/" class="cta cta--post">&lsaquo; BACK HOME</a>
+      </main>
+
+      <footer class="footer u-wrapper">
+         <p class="footer__text">David Krapka, 2019</p>
+      </footer>
+
+      <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,500&display=swap" rel="stylesheet">
+   </body>
+</html>

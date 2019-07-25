@@ -9,7 +9,7 @@ html {
   font-size: 10px; }
   @media screen and (max-width: 37.5em) {
     html {
-      font-size: 8px; } }
+      font-size: 9px; } }
 
 body {
   box-sizing: border-box;
@@ -29,16 +29,33 @@ main {
   min-height: 75vh; }
 
 a {
-  text-decoration: none; }
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: .05rem;
+  transition: .2s; }
+  a:hover {
+    color: black;
+    background-color: #d9f3ff; }
 
 hr {
   margin: 2rem 10vw;
-  color: rgba(0, 0, 0, 0.1); }
+  border: solid 0.5px #e9e9e9; }
+
+p {
+  padding: 1.5rem 0; }
 
 li {
-  padding: .3rem 0; }
+  padding: .3rem 0;
+  line-height: 1.3; }
   li::marker {
     margin-right: 1rem; }
+  li > a {
+    transform: rotate(0); }
+    li > a:hover {
+      color: black;
+      background-color: #d9f3ff;
+      transform: rotate(-4deg); }
 
 ul {
   margin: .5rem 0 .5rem 4rem; }
@@ -59,8 +76,32 @@ code {
   line-height: 2rem; }
 
 .cta {
+  position: relative;
+  margin-left: 1rem;
   font-size: 1.3rem;
   letter-spacing: .07rem; }
+  .cta::before {
+    content: '';
+    position: absolute;
+    top: .2rem;
+    left: -1.1rem;
+    height: 75%;
+    width: .4rem;
+    background-color: #afd5e7; }
+  .cta:hover {
+    transform: rotate(0);
+    background-color: transparent; }
+  .cta--post {
+    margin-top: 4rem; }
+    .cta--post::before {
+      content: '';
+      position: absolute;
+      top: .2rem;
+      left: auto;
+      right: -0.9rem;
+      height: 80%;
+      width: .4rem;
+      background-color: #afd5e7; }
 
 h1, h2, h3, a {
   color: #303030;
@@ -68,6 +109,7 @@ h1, h2, h3, a {
   font-weight: 400; }
 
 h1 {
+  z-index: 2;
   padding: 2rem 0 1rem 0;
   font-size: 10rem;
   letter-spacing: -.2rem; }
@@ -82,6 +124,11 @@ h2 {
   padding: 2.5rem 0 .5rem 0;
   font-size: 4rem;
   letter-spacing: -.07rem; }
+  h2 > a {
+    letter-spacing: 0; }
+    h2 > a:hover {
+      color: auto;
+      background-color: transparent; }
   @media screen and (max-width: 37.5em) {
     h2 {
       font-size: 3rem; } }
@@ -92,9 +139,6 @@ h3 {
   @media screen and (max-width: 37.5em) {
     h3 {
       font-size: 1.8rem; } }
-
-p {
-  padding: 1.5rem 0; }
 
 strong {
   color: #4b4b4b;
@@ -115,6 +159,9 @@ strong {
 
 .header__home-link {
   font-size: 2.5rem; }
+  .header__home-link:hover {
+    color: #303030;
+    background-color: transparent; }
 
 .header__js-styled {
   position: relative; }
@@ -162,6 +209,6 @@ strong {
 
 .post-query__date {
   display: block;
-  margin-top: -.5rem;
+  margin-top: -.8rem;
   font-size: 1.3rem;
   color: #7a7a7a; }

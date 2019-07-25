@@ -75,4 +75,3 @@ var hello = 'Hello, my name is ' + name;
 * log that happy string
 
 <br>
-

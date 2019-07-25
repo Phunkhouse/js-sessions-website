@@ -5,6 +5,7 @@ h1, h2, h3, a {
 }
 
 h1 {
+   z-index: 2;
    padding: 2rem 0 1rem 0;
    font-size: 10rem;
    letter-spacing: -.2rem;
@@ -18,6 +19,15 @@ h2 {
    font-size: 4rem;
    letter-spacing: -.07rem;
 
+   & > a {
+      letter-spacing: 0;
+
+      &:hover {
+         color: auto;
+         background-color: transparent;
+      }
+   }
+
    @include mq-below(phone-lg) { font-size: 3rem; }
 }
 
@@ -28,10 +38,6 @@ h3 {
    @include mq-below(phone-lg) { 
       font-size: 1.8rem;
    }
-}
-
-p {
-   padding: 1.5rem 0;
 }
 
 strong {
