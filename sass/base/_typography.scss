@@ -53,3 +53,7 @@ strong {
    @include mq-below(phone-lg) { font-size: 6rem; }
    @include mq-below(phone-sm) { font-size: 5rem; }
 }
+
+.heading-secondary--home {
+   padding: .5rem 0;
+}

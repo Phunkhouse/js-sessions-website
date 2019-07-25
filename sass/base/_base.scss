@@ -45,12 +45,12 @@ a {
 }
 
 hr {
-   margin: 2rem 10vw;
+   margin: 4rem 10vw;
    border: solid 0.5px $color-gray-super-light;
 }
 
 p {
-   padding: 1.5rem 0;
+   padding: 2rem 0;
 }
 
 li {
@@ -97,6 +97,7 @@ code {
 
 .cta {
    position: relative;
+   margin-top: 1.5rem;
    margin-left: 1rem;
    font-size: 1.3rem;
    letter-spacing: .07rem;
