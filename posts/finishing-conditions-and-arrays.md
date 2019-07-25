@@ -1,7 +1,7 @@
 ---
 pageTitle: Finishing Conditions and starting Arrays
 date: 2019-07-18
-excerpt: So We spoke about the sources everyone should use, We finally finished Variables and explored ways to comment out our code.
+excerpt: Conditions adventure is behind us. We also scratched surface of Arrays - lists everywhere!
 ---
 
 ### Last hour questions
