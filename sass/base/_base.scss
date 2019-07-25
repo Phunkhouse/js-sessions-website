@@ -8,15 +8,24 @@
 
 html {
    font-size: 10px;
+
+   @include mq-below(phone-lg) { font-size: 8px; }
 }
 
 body {
    box-sizing: border-box;
-   padding: 2rem 22vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 2rem 4rem;
    font-family: 'Roboto', sans-serif;
    font-size: 1.6rem;
    font-weight: 300;
    background-color: white;
+
+   @include mq-below(desktop-sm) { 
+      align-items: flex-start;
+   }
 }
 
 main {
@@ -51,18 +60,15 @@ ul ul {
 pre {
    margin: 3rem;
    padding: 2rem 3rem;
-   background-color: rgb(217, 243, 255);
+   background-color: $color-primary;
    border-radius: 1rem 0;
+   white-space: pre-wrap;
+   word-break: keep-all
 }
 
 code {
+   display: block;
    line-height: 2rem;
-}
-
-footer {
-   display: flex;
-   justify-content: center;
-   margin-top: 6rem;
 }
 
 .cta {
