@@ -20,9 +20,8 @@ body {
    font-size: 1.6rem;
    font-weight: $pr-standard-weight;
 
-   @include mq-below(desktop-sm) { 
-      align-items: flex-start;
-   }
+   @include mq-below(tablet) { padding: 2rem 3rem; }
+   @include mq-below(desktop-sm) { align-items: flex-start; }
 }
 
 main {
@@ -87,6 +86,8 @@ pre {
    background-color: $color-code;
    border-radius: 1rem 0;
    overflow-x: hidden;
+
+   @include mq-below(tablet) { margin: 3rem -1.5rem; }
 }
 
 code {
