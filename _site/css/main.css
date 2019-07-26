@@ -65,7 +65,7 @@ pre {
   display: block;
   margin: 3rem;
   padding: 2rem 3rem;
-  background-color: #d9f3ff;
+  background-color: #221A0F;
   border-radius: 1rem 0;
   overflow-x: hidden; }
 
@@ -211,3 +211,68 @@ strong {
   margin-top: -.8rem;
   font-size: 1.3rem;
   color: #7a7a7a; }
+
+/*
+    Name:     Kimbie (dark)
+    Author:   Jan T. Sott
+    License:  Creative Commons Attribution-ShareAlike 4.0 Unported License
+    URL:      https://github.com/idleberg/Kimbie-highlight.js
+*/
+/* Kimbie Comment */
+.hljs-comment,
+.hljs-quote {
+  color: #d6baad; }
+
+/* Kimbie Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-meta {
+  color: #dc3958; }
+
+/* Kimbie Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-deletion,
+.hljs-link {
+  color: #f79a32; }
+
+/* Kimbie Yellow */
+.hljs-title,
+.hljs-section,
+.hljs-attribute {
+  color: #f06431; }
+
+/* Kimbie Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #889b4a; }
+
+/* Kimbie Purple */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-function {
+  color: #98676a; }
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #221a0f;
+  color: #d3af86;
+  padding: 0.5em; }
+
+.hljs-emphasis {
+  font-style: italic; }
+
+.hljs-strong {
+  font-weight: bold; }
