@@ -3,4 +3,6 @@
    margin-top: -.8rem;
    font-size: 1.3rem;
    color: rgb(122, 122, 122);
+
+   @include mq-below(tablet) { margin-top: .5rem; }
 }

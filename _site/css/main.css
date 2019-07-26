@@ -124,6 +124,9 @@ h2 {
     h2 > a:hover {
       color: auto;
       background-color: transparent; }
+  @media screen and (max-width: 56.25em) {
+    h2 {
+      line-height: 1.15; } }
   @media screen and (max-width: 37.5em) {
     h2 {
       font-size: 3rem; } }
@@ -211,6 +214,9 @@ strong {
   margin-top: -.8rem;
   font-size: 1.3rem;
   color: #7a7a7a; }
+  @media screen and (max-width: 56.25em) {
+    .post-query__date {
+      margin-top: .5rem; } }
 
 /*
     Name:     Kimbie (dark)

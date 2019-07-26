@@ -29,6 +29,7 @@ h2 {
       }
    }
 
+   @include mq-below(tablet) { line-height: 1.15; }
    @include mq-below(phone-lg) { font-size: 3rem; }
 }
 
