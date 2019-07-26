@@ -11,6 +11,7 @@ h1 {
    letter-spacing: -.2rem;
    line-height: 1.4;
 
+   @include mq-below(tablet) { line-height: 1.25; }
    @include mq-below(phone-lg) { font-size: 7rem; }
    @include mq-below(phone-sm) { font-size: 5rem; }
 }
