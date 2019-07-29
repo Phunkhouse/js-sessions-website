@@ -4,6 +4,11 @@ date: 2019-07-04
 excerpt: So We spoke about the sources everyone should use, We finally finished Variables and explored ways to comment out our code.
 ---
 
+### Last hour questions
+* What is the variable?
+* Declare variable with a string value
+* Declare variable and let it compute 10 - 7
+
 ## Sources
 * **MDN** - most reliable, could be difficult to read, time independent, compatibility bonus
   * [MDN link](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -11,11 +16,6 @@ excerpt: So We spoke about the sources everyone should use, We finally finished 
   * [W3Schools link](https://www.w3schools.com/jsref/default.asp)
 * **Stack Overflow** and others - could be faster, beware of time (when the problem there was solved)
 * It's often faster to use **Google** then search inside these sources, just be aware that these sources are your primary ones - so search like "[search question] JS" and look for **MDN** and **W3Schools** results
-
-## Last hour questions
-* What is the variable?
-* Declare variable with a string value
-* Declare variable and let it compute 10 - 7
 
 ## Finishing Variables
 * There is a difference between **declaring** and **updating** variable value

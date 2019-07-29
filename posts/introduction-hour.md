@@ -1,5 +1,5 @@
 ---
-pageTitle: Introduction Hour
+pageTitle: Introduction hour
 date: 2019-06-27
 excerpt: Introduction, instalation of of needed tools and some first steps to the land of Variables.
 ---

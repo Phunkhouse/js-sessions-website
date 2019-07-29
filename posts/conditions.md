@@ -9,7 +9,7 @@ excerpt: If We could't get Conditions right, We would be screwed. And that's how
 * Create variable timeNow that is saying 'It is [actual time]'. Because time is constatly changing, place variable time instead of [actual time] string piece, give it a number value of actual time and cocatenate it with the string.
 * Create variable test and give it a string hello world. Comment it out. Uncomment it.
 
-### Conditions
+## Conditions
 * You want something to happen only **if certain condition apply**
 * Example: If user is logged then welcome that user, in JS sense:
 

@@ -8,7 +8,7 @@ excerpt: Conditions adventure is behind us. We also scratched surface of Arrays 
 * Create condition for situation when you are **tired**. When you are - **grab a cofee**. When not - **work harder**. Output for both conditions will be logged as a **string**.
 * That isn't actually a question but We figured that We need to know more about **what is true and false in JS**. This [link](http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html) is perfect for it.
 
-### Conditions continued
+## Conditions continued
 * So what if we need to set **more conditions**? Let's use **ELSE IF** for that:
 
 ````javascript
