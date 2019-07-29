@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>More Arrays - JS Sessions briefs</title>
+      <link rel="stylesheet" href="/css/main.css">
+   </head>
+   <body>
+      <header class="header u-wrapper">
+         <a href="/" class="header__home-link">
+            <span class="header__js-styled header__js-styled--small">JS</span> Sessions
+         </a>
+      </header>
+      
+      <main class="u-wrapper">
+         <h1 class="heading--post">More Arrays</h1>
+
+         <h3>Last hour questions</h3>
+<ul>
+<li>Create an array and fill it with one <strong>string</strong>, one <strong>variable</strong> and one <strong>number</strong>. <strong>Access third item</strong> and save it to a <strong>new variable</strong>.</li>
+<li>Write a condition with <strong>logical operator</strong> where one thing <strong>or</strong> other thing could be <strong>true</strong></li>
+</ul>
+<h2>Arrays continued</h2>
+<ul>
+<li>We can do many useful things with arrays. Let's talk about basic ones (we call them methods or properties):
+<ul>
+<li><strong>Add</strong> another item <strong>to the end</strong> (<strong>push</strong> method):</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-Javascript">var cars = ['BMW', 'Audi', 'Ferrari'];
+
+cars.push('Bugatti');
+console.log(cars);
+// ['BMW', 'Audi', 'Ferrari', 'Bugatti']
+
+// OR
+var chevrolet = ['Camaro', 'Corvette'];
+cars.push('Porsche', chevrolet)
+console.log(cars);
+// ['BMW', 'Audi', 'Ferrari', 'Bugatti', 'Porsche', ['Camaro', 'Corvette']]
+</code></pre>
+<ul>
+<li><strong>Remove last</strong> item (<strong>pop</strong> method):</li>
+</ul>
+<pre><code class="language-Javascript">var countries = ['Germany', 'Slovakia', 'Poland'];
+
+countries.pop();
+console.log(countries);
+// ['Germany', 'Slovakia']
+</code></pre>
+<ul>
+<li><strong>Add</strong> to the <strong>start</strong> (<strong>unshift</strong> method):</li>
+</ul>
+<pre><code class="language-Javascript">var years = [1984, 1995, 2008];
+
+years.unshift(1955);
+console.log(years);
+// [ 1955, 1984, 1995, 2008 ]
+</code></pre>
+<ul>
+<li><strong>Remove</strong> from the <strong>start</strong> (<strong>shift</strong> method):</li>
+</ul>
+<pre><code class="language-Javascript">var books = ['Brave New World', 'Animal Farm', 'Atlas Shrugged']
+
+books.shift();
+console.log(books);
+// [ 'Animal Farm', 'Atlas Shrugged' ]
+</code></pre>
+<h3>CH1: Supermarket run</h3>
+<ul>
+<li>You are in a supermarket and you need to buy some things</li>
+<li><strong>cart</strong> is your <strong>array</strong> and depending on which <strong>section</strong> of supermarket you are, you will need to put things to your cart</li>
+<li>you are aware about <strong>vegetables</strong>, <strong>snacks</strong> and <strong>meat</strong> sections</li>
+<li>you'll need <strong>tomato</strong> and <strong>cucumber</strong> from <em>vegetables</em> sec.</li>
+<li>you'll need <strong>cookies</strong> from <em>snacks</em> sec.</li>
+<li>you'll need <strong>chicken wings</strong> from <em>meat</em> sec.</li>
+<li><strong>set condition for every section visit</strong></li>
+<li><strong>SCENARIO 1:</strong>
+<ul>
+<li>you arrived to the <strong>vegetables</strong> section</li>
+<li><strong>grab needed items</strong> and <strong>log the content</strong> of your cart</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/EqZEXZ">solution here</a></li>
+</ul>
+</li>
+<li><strong>SCENARIO 2:</strong>
+<ul>
+<li>you arrived to the <strong>snacks</strong> section</li>
+<li><strong>grab needed item</strong></li>
+<li>you decided that the cookies are all you need so you will go straight to the checkout</li>
+<li>after a while you realise that you forget your money so you will need to <strong>put it back</strong></li>
+<li><strong>log the content</strong> of your cart after all of this</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/YmNaOO">solution here</a></li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>So one final and really useful method for <strong>removing or even adding one or more items</strong> to (or from) <strong>any place from within an array</strong> (<strong>splice</strong> method):</li>
+</ul>
+<pre><code class="language-Javascript">var sports = ['football', 'tennis', 'golf', 'ice hockey', 'baseball', 'volleyball'];
+
+sports.splice(1, 2);
+console.log(sports);
+// [ 'football', 'ice hockey', 'baseball', 'volleyball' ]
+
+sports.splice(2, 0, 'basketball');
+console.log(sports);
+// [ 'football', 'ice hockey', 'basketball' 'baseball', 'volleyball' ]
+</code></pre>
+<ul>
+<li>And one <strong>property for array length</strong> used, again, so often (<strong>length</strong> property):</li>
+</ul>
+<pre><code class="language-Javascript">var religions = ['christianity', 'islam', 'budhism', 'hinduism'];
+
+console.log(religions.length);
+// 4
+</code></pre>
+<ul>
+<li><strong>NOTICE:</strong> length counting <strong>starts from 1</strong>, not from 0 like in array's indexes</li>
+</ul>
+<br>
+<h3>CH2: Cities of the world</h3>
+<ul>
+<li>Lets make an array - <strong>european cities</strong> and insert there five of your favourite cities (european)</li>
+<li>Make an empty array - <strong>american cities</strong></li>
+<li>Under them make another empty array - <strong>world cities</strong></li>
+<li><strong>SCENARIO 1:</strong>
+<ul>
+<li>dynamically insert <strong>european cities</strong> array into the <strong>world cities</strong></li>
+<li><strong>choose one</strong> and <strong>log it from world cities</strong> array</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/PMWRrr">solution here</a></li>
+</ul>
+</li>
+<li><strong>SCENARIO 2:</strong>
+<ul>
+<li>dynamically fill <strong>american cities</strong> with <strong>3 cities</strong> from this continent, preferably in <strong>one row</strong> (with one method)</li>
+<li>dynamically insert <strong>american cities</strong> array into the <strong>world cities</strong></li>
+<li>dynamically remove <strong>european cities</strong> from <strong>world cities</strong></li>
+<li><strong>log last item</strong> of <strong>american cities</strong> from within the <strong>world cities</strong> array (<strong>BONUS:</strong> do it with a length property)</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/zgNjvp">solution here</a>
+<br></li>
+</ul>
+</li>
+</ul>
+
+      
+         <br>
+         <a href="/" class="cta cta--post">&lsaquo; BACK HOME</a>
+      </main>
+
+      <footer class="footer u-wrapper">
+         <p class="footer__text">David Krapka, 2019</p>
+      </footer>
+
+      <script>
+         var isIE = /MSIE \d|Trident.*rv:/.test(navigator.userAgent);
+
+         // Use async when it is not an IE (doesn't work properly)
+         if (!isIE) {
+
+            WebFontConfig = {
+               google: {
+                  families: ['Oswald|Roboto:300,500&display=swap']
+               }
+            };
+
+            (function (d) {
+               var wf = d.createElement('script'), s = d.scripts[0];
+               wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+               wf.async = true;
+               s.parentNode.insertBefore(wf, s);
+            })(document);
+
+            // If it's IE, create normal stylesheet and avoid &amp;
+         } else {
+
+            var styleElement = document.createElement("link");
+            styleElement.href = "https://fonts.googleapis.com/css?family=Oswald|Roboto:300,500&display=swap";
+            styleElement.rel = "stylesheet";
+            document.querySelector("body").appendChild(styleElement);
+
+         };
+      </script>
+      <script src="/js/highlight.pack.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+   </body>
+</html>

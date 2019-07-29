@@ -130,6 +130,9 @@ h2 {
   letter-spacing: -.07rem; }
   h2 > a {
     letter-spacing: 0; }
+    @media screen and (max-width: 100em) {
+      h2 > a {
+        letter-spacing: -.09rem; } }
     h2 > a:hover {
       color: auto;
       background-color: transparent; }

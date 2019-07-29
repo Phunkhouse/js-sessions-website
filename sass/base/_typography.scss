@@ -24,12 +24,15 @@ h2 {
    & > a {
       letter-spacing: 0;
 
+      @include mq-below(desktop-lg) { letter-spacing: -.09rem; }
+
       &:hover {
          color: auto;
          background-color: transparent;
       }
    }
 
+   
    @include mq-below(tablet) { line-height: 1.15; }
    @include mq-below(phone-lg) { font-size: 3rem; }
 }
