@@ -1,7 +1,7 @@
 ---
 pageTitle: More Arrays
 date: 2019-07-25
-excerpt: Introduction, instalation of of needed tools and some first steps to the land of Variables.
+excerpt: Introducion of array dynamic modification. 
 ---
 
 ### Last hour questions
