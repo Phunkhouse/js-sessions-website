@@ -6,9 +6,9 @@ excerpt: So We spoke about the sources everyone should use, We finally finished 
 
 ## Sources
 * **MDN** - most reliable, could be difficult to read, time independent, compatibility bonus
-  * [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  * [MDN link](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * **W3Schools** - not that reliable, easier to read, time independent
-  * [https://www.w3schools.com/jsref/default.asp](https://www.w3schools.com/jsref/default.asp)
+  * [W3Schools link](https://www.w3schools.com/jsref/default.asp)
 * **Stack Overflow** and others - could be faster, beware of time (when the problem there was solved)
 * It's often faster to use **Google** then search inside these sources, just be aware that these sources are your primary ones - so search like "[search question] JS" and look for **MDN** and **W3Schools** results
 

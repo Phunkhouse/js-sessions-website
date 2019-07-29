@@ -78,7 +78,15 @@ pre {
 code {
   display: block;
   line-height: 2rem;
-  overflow-x: auto; }
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4b4b4b #221A0F; }
+  code::-webkit-scrollbar {
+    height: .7rem; }
+  code::-webkit-scrollbar-track {
+    background: #221A0F; }
+  code::-webkit-scrollbar-thumb {
+    background: #4b4b4b; }
 
 .cta {
   position: relative;
@@ -230,6 +238,11 @@ strong {
   @media screen and (max-width: 56.25em) {
     .post-query__date {
       margin-top: .5rem; } }
+
+.glyph-post {
+  position: absolute;
+  top: -.13rem;
+  left: -1rem; }
 
 /*
     Name:     Kimbie (dark)
