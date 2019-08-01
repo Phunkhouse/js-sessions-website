@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Summer Challenges - JS Sessions briefs</title>
+      <link rel="stylesheet" href="/css/main.css">
+   </head>
+   <body>
+      <header class="header u-wrapper">
+         <a href="/" class="header__home-link">
+            <span class="header__js-styled header__js-styled--small">JS</span> Sessions
+         </a>
+      </header>
+      
+      <main class="u-wrapper">
+         <h1 class="heading--post">Summer Challenges</h1>
+
+         <h3>CH1: Everyday playlist</h3>
+<ul>
+<li>You want make playlist for few everyday situations</li>
+<li>your playlists library looks like this (you can copy the code):</li>
+</ul>
+<pre><code class="language-Javascript">var playlists = [chillout, energizingMusic, classicalMusic, electronicMusic, podcasts];
+</code></pre>
+<ul>
+<li>there are 4 situations where you are often involved - <strong>work</strong>, <strong>relaxing</strong>, <strong>travelling</strong> and <strong>exercising</strong></li>
+<li>set a condition for every situation (and choose one):
+<ul>
+<li>when you are in <strong>work</strong>, you want your playlists play just <strong>chillout</strong> and <strong>electronic music</strong></li>
+<li>when you are <strong>relaxing</strong>, you would want <strong>chillout</strong> and <strong>classical music</strong></li>
+<li>when you are <strong>travelling</strong>, <strong>podcasts</strong> could be a good choice</li>
+<li>and when you are <strong>exercising</strong>, some <strong>energizing music</strong> would fit</li>
+</ul>
+</li>
+<li>you don't need to log result (since the playlists genres itself are undefined)</li>
+</ul>
+<br>
+<h3>CH2: Make a tip</h3>
+<ul>
+<li>Let's make a tip calculator</li>
+<li>create a <strong>payment</strong> variable with some price value</li>
+<li>create <strong>tip</strong> variable with either <strong>'high'</strong>, <strong>'medium'</strong> or <strong>'low'</strong> string value</li>
+<li>high tip is a <strong>20%</strong>, medium is <strong>10%</strong> and low is <strong>5%</strong></li>
+<li>check how high is the tip and let it <strong>compute</strong> and <strong>log</strong> the final value</li>
+<li>bonus: include a case where the user haven't specified a tip</li>
+</ul>
+<br>
+<h3>CH3: Temperature converter</h3>
+<ul>
+<li>You are making celsius to fahrenheit converter</li>
+<li>create <strong>celsius</strong> variable with some <strong>temperature value</strong> and <strong>empty fahrenheit variable</strong></li>
+<li>google the formula for converting celsius to fahrenheit and use it to <strong>update fahrenheit value</strong> according to that formula</li>
+<li><strong>log the new value of fahreheit</strong> variable that should be converted celsius value now</li>
+</ul>
+
+      
+         <br>
+         <a href="/" class="cta cta--post"><span class="glyph-post">&lsaquo;</span> BACK HOME</a>
+      </main>
+
+      <footer class="footer u-wrapper">
+         <p class="footer__text">David Krapka, 2019</p>
+      </footer>
+
+      <script>
+         var isIE = /MSIE \d|Trident.*rv:/.test(navigator.userAgent);
+
+         // Use async when it is not an IE (doesn't work properly)
+         if (!isIE) {
+
+            WebFontConfig = {
+               google: {
+                  families: ['Oswald|Roboto:300,500&display=swap']
+               }
+            };
+
+            (function (d) {
+               var wf = d.createElement('script'), s = d.scripts[0];
+               wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+               wf.async = true;
+               s.parentNode.insertBefore(wf, s);
+            })(document);
+
+            // If it's IE, create normal stylesheet and avoid &amp;
+         } else {
+
+            var styleElement = document.createElement("link");
+            styleElement.href = "https://fonts.googleapis.com/css?family=Oswald|Roboto:300,500&display=swap";
+            styleElement.rel = "stylesheet";
+            document.querySelector("body").appendChild(styleElement);
+
+         };
+      </script>
+      <script src="/js/highlight.pack.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+   </body>
+</html>
