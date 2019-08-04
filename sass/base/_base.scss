@@ -90,6 +90,11 @@ pre {
    overflow-x: hidden;
 
    @include mq-below(tablet) { margin: 3rem -1.5rem; }
+   
+   @include mq-below(phone-lg) { 
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+   }
 }
 
 code {
