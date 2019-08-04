@@ -118,6 +118,10 @@ code {
       left: auto;
       right: -0.9rem; }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 h1, h2, h3, a {
   color: #303030;
   font-family: "Oswald", sans-serif;
