@@ -1,7 +1,7 @@
 ---
 pageTitle: Summer challenges
 date: 2019-08-01
-excerpt: So We spoke about the sources everyone should use, We finally finished Variables and explored ways to comment out our code.
+excerpt: 3 challenges to exercise your newly gained knowledge.
 ---
 
 ###  CH1: Everyday playlist
