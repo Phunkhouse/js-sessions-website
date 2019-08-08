@@ -6,7 +6,7 @@ excerpt: If We could't get Conditions right, We would be screwed. And that's how
 
 ### Last hour questions
 * Declare variable with some number as a value. Increase its original value by 9000 on the next line.
-* Create variable timeNow that is saying 'It is [actual time]'. Because time is constatly changing, place variable time instead of [actual time] string piece, give it a number value of actual time and cocatenate it with the string.
+* Create variable timeNow that is saying 'It is [actual time]'. Because time is constatly changing, place variable time instead of [actual time] string piece, give it a number value of actual time and concatenate it with the string.
 * Create variable test and give it a string hello world. Comment it out. Uncomment it.
 
 ## Conditions
@@ -35,7 +35,7 @@ if (isLoggedIn) {
 * declare **is batman** variable and set it to true (boolean)
 * use the if statement to check whether you are a batman - if yes than log **"I am Batman"**
 * try to change variable value to false - it shouldn't log anything
-* [solution here](https://codepen.io/Phhunkhouse/pen/RzeMge)
+* [solution here](https://codepen.io/Phhunkhouse/pen/YomqXQ)
 
 <br>
 
