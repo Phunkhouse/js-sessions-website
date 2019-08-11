@@ -3,3 +3,23 @@
    top: -.13rem;
    left: -1rem;
 }
+
+.js-challenge-frame {
+   margin-top: 4rem;
+
+   &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: -1.7rem;
+      left: -.9rem;
+      height: 127%;
+      width: 70%;
+      background-color: $color-primary;
+      border-radius: 1rem;
+
+      @include mq-below(phone-lg) { width: 100%; }
+   }
+}
+
+.js-challenge-scenario { padding-top: 2rem; }

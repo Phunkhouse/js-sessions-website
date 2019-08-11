@@ -1,4 +1,5 @@
 .u-wrapper {
+
    @include mq(desktop-sm) {
       width: 80rem;
    }

@@ -36,8 +36,7 @@ a {
   letter-spacing: .05rem;
   transition: .2s; }
   a:hover {
-    color: black;
-    background-color: #d9f3ff; }
+    color: black; }
 
 hr {
   margin: 4rem 10vw;
@@ -61,11 +60,19 @@ li {
       li::marker {
         margin-right: .7rem; } }
   li > a {
-    transform: rotate(0); }
-    li > a:hover {
-      color: black;
-      background-color: #d9f3ff;
-      transform: rotate(-4deg); }
+    position: relative; }
+    li > a::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 2.5rem;
+      left: -.3rem;
+      height: .4rem;
+      width: 108%;
+      background-color: white;
+      transition: .2s; }
+    li > a:hover::before {
+      background-color: #afd5e7; }
 
 ul {
   margin: .5rem 0 .5rem 4rem; }
@@ -122,7 +129,6 @@ code {
     width: .4rem;
     background-color: #afd5e7; }
   .cta:hover {
-    transform: rotate(0);
     background-color: transparent; }
   .cta--post {
     margin-top: 4rem; }
@@ -181,6 +187,7 @@ h2 {
       font-size: 3rem; } }
 
 h3 {
+  position: relative;
   padding: 1rem 0 .5rem 0;
   font-size: 2.5rem; }
   @media screen and (max-width: 37.5em) {
@@ -274,6 +281,25 @@ strong {
   position: absolute;
   top: -.13rem;
   left: -1rem; }
+
+.js-challenge-frame {
+  margin-top: 4rem; }
+  .js-challenge-frame::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: -1.7rem;
+    left: -.9rem;
+    height: 127%;
+    width: 70%;
+    background-color: #d9f3ff;
+    border-radius: 1rem; }
+    @media screen and (max-width: 37.5em) {
+      .js-challenge-frame::before {
+        width: 100%; } }
+
+.js-challenge-scenario {
+  padding-top: 2rem; }
 
 /*
     Name:     Kimbie (dark)

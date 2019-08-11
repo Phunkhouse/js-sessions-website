@@ -30,7 +30,6 @@ if (isAdmin) {
 <br>
 
 ### CH1: Am I a Batman? 3.0
-* delete **isBatman** variable
 * create **hero** variable and set it to **"Robin"**
 * change conditions in way so it will check for string **"Batman"** resulted in **"I am Batman"**
 * it will also check for string **"Robin"** - result will be logged as **"So now I am Robin :("**
