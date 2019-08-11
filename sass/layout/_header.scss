@@ -1,4 +1,6 @@
 .header {
+   &__home-heading { font-weight: 400; }
+
    &__home-link {
       font-size: 2.5rem;
 
@@ -49,20 +51,15 @@
             top: 0;
             left: -.8rem;
             height: 15rem;
-            width: 12rem;
+            width: 12.2rem;
          }
 
          @include mq-below(phone-lg) {
-            &::before {
-               height: 13.5rem;
-               width: 11.8rem;
-            }
+            &::before { height: 13.5rem; }
          }
 
          @include mq-below(phone-sm) {
-            &::before {
-               height: 12.4rem;
-            }
+            &::before { height: 12.4rem; }
          }
       }
    }

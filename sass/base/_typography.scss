@@ -13,6 +13,7 @@ h1 {
    z-index: 2;
    padding: 2rem 0 1rem 0;
    font-size: 10rem;
+   font-weight: 600;
    letter-spacing: -.2rem;
    line-height: 1.4;
 
@@ -24,10 +25,14 @@ h1 {
 h2 {
    padding: 2.5rem 0 .5rem 0;
    font-size: 4rem;
+   font-weight: 600;
    letter-spacing: -.07rem;
+   color: $color-gray-light;
 
    & > a {
+      font-weight: 600;
       letter-spacing: 0;
+      color: $color-gray-light;
 
       @include mq-below(desktop-lg) { letter-spacing: -.09rem; }
 
@@ -44,11 +49,9 @@ h2 {
 
 h3 {
    padding: 1rem 0 .5rem 0;
-   font-size: 2.3rem;
+   font-size: 2.5rem;
 
-   @include mq-below(phone-lg) { 
-      font-size: 1.8rem;
-   }
+   @include mq-below(phone-lg) { font-size: 2.2rem; }
 }
 
 strong {
@@ -64,6 +67,4 @@ strong {
    @include mq-below(phone-sm) { font-size: 5rem; }
 }
 
-.heading-secondary--home {
-   padding: .5rem 0;
-}
+.heading-secondary--home { padding: .5rem 0 }

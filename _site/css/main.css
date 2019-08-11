@@ -99,13 +99,13 @@ code {
   line-height: 2rem;
   overflow-x: auto;
   scrollbar-width: thin;
-  scrollbar-color: #4b4b4b #221A0F; }
+  scrollbar-color: #464646 #221A0F; }
   code::-webkit-scrollbar {
     height: .7rem; }
   code::-webkit-scrollbar-track {
     background: #221A0F; }
   code::-webkit-scrollbar-thumb {
-    background: #4b4b4b; }
+    background: #464646; }
 
 .cta {
   position: relative;
@@ -143,6 +143,7 @@ h1 {
   z-index: 2;
   padding: 2rem 0 1rem 0;
   font-size: 10rem;
+  font-weight: 600;
   letter-spacing: -.2rem;
   line-height: 1.4; }
   @media screen and (max-width: 56.25em) {
@@ -158,9 +159,13 @@ h1 {
 h2 {
   padding: 2.5rem 0 .5rem 0;
   font-size: 4rem;
-  letter-spacing: -.07rem; }
+  font-weight: 600;
+  letter-spacing: -.07rem;
+  color: #464646; }
   h2 > a {
-    letter-spacing: 0; }
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #464646; }
     @media screen and (max-width: 100em) {
       h2 > a {
         letter-spacing: -.09rem; } }
@@ -176,13 +181,13 @@ h2 {
 
 h3 {
   padding: 1rem 0 .5rem 0;
-  font-size: 2.3rem; }
+  font-size: 2.5rem; }
   @media screen and (max-width: 37.5em) {
     h3 {
-      font-size: 1.8rem; } }
+      font-size: 2.2rem; } }
 
 strong {
-  color: #4b4b4b;
+  color: #464646;
   font-weight: 500; }
 
 .heading--post {
@@ -201,6 +206,9 @@ strong {
 @media screen and (min-width: 75em) {
   .u-wrapper {
     width: 80rem; } }
+
+.header__home-heading {
+  font-weight: 400; }
 
 .header__home-link {
   font-size: 2.5rem; }
@@ -235,11 +243,10 @@ strong {
     top: 0;
     left: -.8rem;
     height: 15rem;
-    width: 12rem; }
+    width: 12.2rem; }
   @media screen and (max-width: 37.5em) {
     .header__js-styled--small::before {
-      height: 13.5rem;
-      width: 11.8rem; } }
+      height: 13.5rem; } }
   @media screen and (max-width: 25em) {
     .header__js-styled--small::before {
       height: 12.4rem; } }
@@ -251,7 +258,7 @@ strong {
   margin-top: 6rem; }
   .footer__text {
     font-size: 1.4rem;
-    color: #4b4b4b; }
+    color: #464646; }
 
 .post-query__date {
   display: block;
