@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Loops - JS Sessions briefs</title>
+      <meta name="description" content="Left a hardwork for computers. This intro for automation introduced us the basics of the for loop.">
+
+      <!-- FAVICON -->
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#d9f3ff">
+      <meta name="theme-color" content="#ffffff">
+
+      <link rel="stylesheet" href="/css/main.css">
+   </head>
+   <body>
+      <header class="header u-wrapper">
+         <a href="/" class="header__home-link">
+            <span class="header__js-styled header__js-styled--small">JS</span> Sessions
+         </a>
+      </header>
+      
+      <main class="u-wrapper">
+         <h1 class="heading--post">Loops</h1>
+
+         <h3>Last hour questions</h3>
+<ul>
+<li>Review of <a href="/posts/summer-challenges">summer challenges</a></li>
+</ul>
+<h2>Loops</h2>
+<ul>
+<li>They do something repeatedly - they automate</li>
+<li>Loop through all countries, events, elements, filters etc… so <strong>loop through some array of items</strong> - to find something, to list something, with some sort of conditions</li>
+<li>Basic <strong>for</strong> loop:</li>
+</ul>
+<pre><code class="language-Javascript">var loopsCount = 5;
+for (var i = 0; i &lt; loopsCount; i++) {
+   console.log(i);
+}
+/*
+0
+1
+2
+3
+4
+*/
+</code></pre>
+<ul>
+<li>It is basically saying: &quot;<strong>Start from 0</strong>, loop until the <strong>i</strong> variable is still <strong>less than 5</strong> and <strong>increase</strong> the <strong>i</strong> variable <strong>by 1 each round</strong>.&quot;</li>
+<li><strong>NOTICE:</strong> <strong>i++</strong> is the widely used shorthand for incrementation and it is basically <strong>i += 1</strong> that is shorthand for <strong>i = i + 1</strong>. This shorthand could be used just for <strong>incrementing by 1</strong> or decrementing by 1 (i--)</li>
+<li>Let's look on more real world example including an array in the mix:</li>
+</ul>
+<pre><code class="language-Javascript">var array = ['tomato', 'apple', 'oranges'];
+for (var i = 0; i &lt; array.length; i++) {
+   console.log(array[i]);
+}
+/*
+tomato
+apple
+oranges
+*/
+</code></pre>
+<ul>
+<li>So we are saying: &quot;<strong>Start from the 0</strong>, loop until you reach the <strong>length of the array</strong>, <strong>increment</strong> always <strong>by 1</strong>&quot; and: &quot;Every time <strong>log the current item of the array</strong> - which has the same index as the current iteration&quot;</li>
+</ul>
+<br>
+<h3>CH1: Bazinga!</h3>
+<ul>
+<li>Create an <strong>array</strong> and fill it <strong>five different strings</strong></li>
+<li>Use for loop to <strong>change all the items to bazinga</strong></li>
+<li>Log the array in the end</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/voVMdJ">solution here</a></li>
+</ul>
+<br>
+<ul>
+<li>We have two statements to further control behavior of the loop - <strong>break</strong> and <strong>continue</strong></li>
+<li><strong>Break</strong> will <strong>stop the loop</strong> if certain condition passes - to spare further computations:</li>
+</ul>
+<pre><code class="language-Javascript">var array = ['Brazil', 'Chile', 'Colombia', 'Cuba', 'Ecuador'];
+for (var i = 0; i &lt; array.length; i++) {
+   if (array[i] === 'Chile') {
+      console.log('Found it!');
+      break; // Looping will end with 'Chile'
+   }
+}
+</code></pre>
+<ul>
+<li><strong>Continue</strong> will <strong>exclude current iteration</strong> if it passes:</li>
+</ul>
+<pre><code class="language-Javascript">var array = ['Brazil', 'Chile', 'Bazinga!', 'Colombia', 'Cuba', 'Ecuador', 'Bazinga!'];
+for (var i = 0; i &lt; array.length; i++) {
+   if (array[i] === 'Bazinga!') {
+      console.log('Found it!');
+      continue; // Output will exclude 'Bazinga!'
+   }
+}
+</code></pre>
+<br>
+<h3>CH2: Headings not invited</h3>
+<ul>
+<li>create following array:</li>
+</ul>
+<pre><code class="language-Javascript">var elements = ['DIV', 'IMG', 'H2', 'SPAN', 'FORM', 'H3'];
+</code></pre>
+<ul>
+<li>create an <strong>empty array</strong> named <strong>vipElements</strong></li>
+<li>loop through elements array and <strong>push to the vipElements</strong> only that <strong>items that are not headings</strong></li>
+<li>log final vipElements array</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/MNPRVM">solution here</a></li>
+</ul>
+<br>
+      
+         <br>
+         <a href="/" class="cta cta--post"><span class="glyph-post">&lsaquo;</span> BACK HOME</a>
+      </main>
+
+      <footer class="footer u-wrapper">
+         <p class="footer__text"><a href="https://github.com/Phunkhouse/js-sessions-website" target="_blank" rel="noopener">Source code</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;David Krapka, 2019</p>
+      </footer>
+
+      <script>
+         var isIE = /MSIE \d|Trident.*rv:/.test(navigator.userAgent);
+
+         // Use async when it is not an IE (doesn't work properly)
+         if (!isIE) {
+
+            WebFontConfig = {
+               google: {
+                  families: ['Oswald|Roboto:300,500&display=swap']
+               }
+            };
+
+            (function (d) {
+               var wf = d.createElement('script'), s = d.scripts[0];
+               wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+               wf.async = true;
+               s.parentNode.insertBefore(wf, s);
+            })(document);
+
+            // If it's IE, create normal stylesheet and avoid &amp;
+         } else {
+
+            var styleElement = document.createElement("link");
+            styleElement.href = "https://fonts.googleapis.com/css?Oswald:400,600|Roboto:300,500&display=swap";
+            styleElement.rel = "stylesheet";
+            document.querySelector("body").appendChild(styleElement);
+
+         };
+      </script>
+      <script src="/js/highlight.pack.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+      <script src="/js/main.js"></script>
+   </body>
+</html>

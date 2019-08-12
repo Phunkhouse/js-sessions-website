@@ -17,6 +17,7 @@ var playlists = [chillout, energizingMusic, classicalMusic, electronicMusic, pod
   * when you are **travelling**, **podcasts** could be a good choice
   * and when you are **exercising**, some **energizing music** would fit
 * you don't need to log result (since the playlists genres itself are undefined)
+* [solution here](https://codepen.io/Phhunkhouse/pen/ZgqZwY)
 
 <br>
 
@@ -27,6 +28,7 @@ var playlists = [chillout, energizingMusic, classicalMusic, electronicMusic, pod
 * high tip is a **20%**, medium is **10%** and low is **5%**
 * check how high is the tip and let it **compute** and **log** the final value
 * bonus: include a case where the user haven't specified a tip
+* [solution here](https://codepen.io/Phhunkhouse/pen/WVaWPm)
 
 <br>
 
@@ -35,3 +37,4 @@ var playlists = [chillout, energizingMusic, classicalMusic, electronicMusic, pod
 * create **celsius** variable with some **temperature value** and **empty fahrenheit variable**
 * google the formula for converting celsius to fahrenheit and use it to **update fahrenheit value** according to that formula
 * **log the new value of fahreheit** variable that should be converted celsius value now
+* [solution here](https://codepen.io/Phhunkhouse/pen/NQOmJo)
