@@ -1,7 +1,7 @@
 ---
 pageTitle: Loops
 date: 2019-08-08
-excerpt: Left a hardwork for computers. This intro for automation introduced us the basics of the for loop.
+excerpt: Leave hardwork for computers. This intro for automation introduced us basics of the for loop.
 ---
 
 ### Last hour questions
