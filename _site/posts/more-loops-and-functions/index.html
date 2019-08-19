@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>More Loops and Functions - JS Sessions briefs</title>
+      <meta name="description" content="We finished loops with more options how to do them and tried our first functions.">
+
+      <!-- FAVICON -->
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#d9f3ff">
+      <meta name="theme-color" content="#ffffff">
+
+      <link rel="stylesheet" href="/css/main.css">
+   </head>
+   <body>
+      <header class="header u-wrapper">
+         <a href="/" class="header__home-link">
+            <span class="header__js-styled header__js-styled--small">JS</span> Sessions
+         </a>
+      </header>
+      
+      <main class="u-wrapper">
+         <h1 class="heading--post">More Loops and Functions</h1>
+
+         <h3>Last hour questions</h3>
+<ul>
+<li>Create <strong>for loop</strong> that will count <strong>from 1 to 10</strong>, every number will be logged</li>
+<li>Create an <strong>array</strong> with <strong>2 strings</strong> in there - dynamicaly <strong>add another one</strong> to the end</li>
+</ul>
+<h2>Loops continued</h2>
+<ul>
+<li>Another variant for looping is <strong>while loop</strong>:</li>
+</ul>
+<pre><code class="language-Javascript">var i = 0;
+while (i &lt; 3) {
+   console.log('Loop number ' + i);
+   i++;
+}
+/*
+Loop number 0
+Loop number 1
+Loop number 2
+*/
+</code></pre>
+<ul>
+<li><strong>NOTICE:</strong> It's very similar to basic if statement but be aware that if the condition never fail, you'll got the <strong>infinite loop</strong> - freeze of your program or even PC</li>
+</ul>
+<br>
+<h3>CH1: Choo choo</h3>
+<ul>
+<li>there is a <strong>train</strong> that has a <strong>length of 7 vagons</strong></li>
+<li>create a <strong>while loop</strong> that will loop <strong>through all the vagons</strong></li>
+<li>first <strong>two vagons</strong> are <strong>1st class</strong></li>
+<li><strong>all other but the last</strong> are <strong>2nd class</strong></li>
+<li><strong>last one</strong> is a <strong>post vagon</strong></li>
+<li><strong>output all the vagons to the console</strong></li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/abomojQ">solution here</a></li>
+</ul>
+<br>
+<ul>
+<li>Finally let's get a preview look on really common way to <strong>loop through an array items</strong>, that could be way easier for many of you. Remember array methods? Let me introduce you <strong>forEach</strong> array method:</li>
+</ul>
+<pre><code class="language-Javascript">var filterCategories = ['country', 'month', 'type', 'level'];
+filterCategories.forEach(function(item) {
+   console.log(item);
+});
+/* 
+country
+month
+type
+level
+*/
+</code></pre>
+<ul>
+<li>There is a catch and that's <strong>IE11 compatibility</strong>. You will need <strong>polyfill</strong> for certain cases (piece of code inserted before any JS code to teach IE newer approaches). Compare <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">basic forEach</a> (example above) and <a href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach">forEach for node list</a>, which is used often for DOM manipulations (we'll get on that later)</li>
+</ul>
+<h2>Functions</h2>
+<ul>
+<li><strong>Reusable block, recipe</strong> - that is <strong>created once</strong> and could be <strong>reused many times</strong></li>
+<li>Good for more complex code to be smarter, shorter an better maintainable</li>
+<li>First, a function needs to be <strong>defined</strong>, then it could be <strong>called</strong> (used)</li>
+<li>Example of a basic function expression:</li>
+</ul>
+<pre><code class="language-Javascript">// Function definition
+var hello = function() {
+   console.log('Hello world');
+}
+
+// Function call
+hello();
+/* 
+Hello world
+*/
+</code></pre>
+<ul>
+<li><strong>NOTICE:</strong> It is again assigned to a variable, like other data types, but behaves differently</li>
+<li>Function could accept <strong>parameter</strong> (one or more) - sort of additional info that is available to be worked with. Parameter is defined by choosed <strong>keyword</strong> (variable for ingredient - do not declare it, it is sort of placeholder) and used with function call as an <strong>argument</strong> (ingredient itself - behaves like variable and could be even another function call)</li>
+<li>But It'll be better to look on the example:</li>
+</ul>
+<pre><code class="language-Javascript">// number1 and number2 are function parameters
+var calcAdd = function (number1, number2) {
+   console.log(number1 + number2);
+}
+
+// 5 and 10 are arguments for function call - so function will do math with those numbers
+calcAdd(5, 10);
+/* 
+15
+*/
+calcAdd(20, 100);
+/* 
+120
+*/
+</code></pre>
+<ul>
+<li>Finally I am introducing you a <strong>return</strong> statement. Very common way to pass chosen result to a variable (in example)</li>
+<li>Return statement:</li>
+</ul>
+<pre><code class="language-Javascript">var calcAdd = function (number1, number2) {
+   var addNum = number1 + number2;
+   return addNum;
+}
+
+// result is returned to the console log
+console.log(calcAdd(5, 10));
+/* 
+15
+*/
+
+// result is returned to the variable
+var result = calcAdd(20, 100);
+console.log(result);
+/* 
+120
+*/
+</code></pre>
+<ul>
+<li>Return statement is better practice to output things from functions. Console log is used more for testing purposes.</li>
+</ul>
+<br>
+<h3>CH2: Hello!</h3>
+<ul>
+<li>create a <strong>function</strong> that will dynamically insert <strong>name</strong> to a <strong>predefined string</strong> (like &quot;Hello. I am 'name'&quot;)</li>
+<li>that function will have <strong>one parameter</strong> that will accept value of a <strong>name</strong></li>
+<li>function needs to <strong>return the result</strong> and not to a console log inside the function</li>
+<li><strong>call the function</strong> with chosen <strong>name as a argument</strong> inside <strong>console log</strong> afterwards</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/abombdr">solution here</a></li>
+</ul>
+<br>
+      
+         <br>
+         <a href="/" class="cta cta--post"><span class="glyph-post">&lsaquo;</span> BACK HOME</a>
+      </main>
+
+      <footer class="footer u-wrapper">
+         <p class="footer__text"><a href="https://github.com/Phunkhouse/js-sessions-website" target="_blank" rel="noopener">Source code</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;David Krapka, 2019</p>
+      </footer>
+
+      <script>
+         var isIE = /MSIE \d|Trident.*rv:/.test(navigator.userAgent);
+
+         // Use async when it is not an IE (doesn't work properly)
+         if (!isIE) {
+
+            WebFontConfig = {
+               google: {
+                  families: ['Oswald|Roboto:300,500&display=swap']
+               }
+            };
+
+            (function (d) {
+               var wf = d.createElement('script'), s = d.scripts[0];
+               wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+               wf.async = true;
+               s.parentNode.insertBefore(wf, s);
+            })(document);
+
+            // If it's IE, create normal stylesheet and avoid &amp;
+         } else {
+
+            var styleElement = document.createElement("link");
+            styleElement.href = "https://fonts.googleapis.com/css?Oswald:400,600|Roboto:300,500&display=swap";
+            styleElement.rel = "stylesheet";
+            document.querySelector("body").appendChild(styleElement);
+
+         };
+      </script>
+      <script src="/js/highlight.pack.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+      <script src="/js/main.js"></script>
+   </body>
+</html>
