@@ -14,4 +14,4 @@ var elements = ['DIV', 'IMG', 'SPAN', 'SECTION', 'MAIN', 'SPAN'];
 * **"I own Doom!"**: log also the name of the element
 * **"Watch me die!"**: log also how many elements you found (try it on the SPAN one)
 
-(Sorry for Doom refferences. Cannot help myself.)
+(Sorry for Doom references - they are just difficulties "Bring it on!" is a normal one. Cannot help myself.)
