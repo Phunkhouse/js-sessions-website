@@ -1,7 +1,7 @@
 ---
 pageTitle: Functions and Objects
 date: 2019-08-22
-excerpt: TBD
+excerpt: Finsihing absolute basics with closer look on Functions and Objects.
 ---
 
 ### Last hour questions
