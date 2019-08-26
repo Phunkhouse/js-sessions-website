@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Functions and Objects - JS Sessions briefs</title>
+      <meta name="description" content="TBD">
+
+      <!-- FAVICON -->
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#d9f3ff">
+      <meta name="theme-color" content="#ffffff">
+
+      <link rel="stylesheet" href="/css/main.css">
+   </head>
+   <body>
+      <header class="header u-wrapper">
+         <a href="/" class="header__home-link">
+            <span class="header__js-styled header__js-styled--small">JS</span> Sessions
+         </a>
+      </header>
+      
+      <main class="u-wrapper">
+         <h1 class="heading--post">Functions and Objects</h1>
+
+         <h3>Last hour questions</h3>
+<ul>
+<li>Function scope questions</li>
+</ul>
+<h2>Functions continued</h2>
+<ul>
+<li>There are <strong>two ways</strong> to define a function. Through <strong>function expression</strong> or <strong>function declaration</strong> (and It is up to you choose):</li>
+</ul>
+<pre><code class="language-Javascript">// Function expression
+var calcAdd = function (number1, number2) {
+   var addNum = number1 + number2;
+   return addNum;
+}
+
+// Function declaration
+function calcAdd(number1, number2) {
+   var addNum = number1 + number2;
+   return addNum;
+}
+</code></pre>
+<br>
+<h3>CH1: Find a country</h3>
+<ul>
+<li>Copy this array:</li>
+</ul>
+<pre><code class="language-Javascript">var countries = ['Brazil', 'Austria', 'France', 'Germany'];
+</code></pre>
+<ul>
+<li>Create a function <strong>findCountry</strong> that will accept one argument - <strong>country</strong> and tries to find it within the countries array</li>
+<li><strong>Return</strong> string responds (like 'Found it' or 'Not found') for cases when the searched <strong>string is in the array or not</strong></li>
+<li><strong>Log the function call</strong> (try both cases)</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/XWrMqeQ">solution here</a></li>
+</ul>
+<br>
+<h2>Objects</h2>
+<ul>
+<li>Collection of <strong>key/value pairs</strong>. Can store many things inside one variable to keep things organised. Heavily used in <strong>object oriented programming</strong> (sort of higher level in JS) - which isn't the case for us, but You can get advantage of knowing them even now</li>
+<li>Basic object:</li>
+</ul>
+<pre><code class="language-Javascript">var person = {
+   firstName: 'Chuck',
+   lastName: 'Norris'
+}
+
+console.log('This is ' + person.firstName + ' ' + person.lastName)
+// This is Chuck Norris
+</code></pre>
+<ul>
+<li>Values could be almost anything - even <strong>functions</strong> and other <strong>objects</strong></li>
+<li>Actually, use of functions inside objects is so common that We have a special term for that - They'are called <strong>methods</strong></li>
+<li>Methods have a possibility to grab a value from other object keys. This can be done through <strong>this</strong> keyword</li>
+<li>Example:</li>
+</ul>
+<pre><code class="language-Javascript">var teenCalculator = {
+   prependText: 'OMG, the result is: ',
+   appendText: ' .That\'s lame, I wanna go home.',
+   add: function(num1, num2) {
+      return this.prependText + (num1 + num2) + this.appendText;
+   },
+   multiply: function (num1, num2) {
+      return this.prependText + (num1 * num2) + this.appendText;
+   }
+}
+
+var result1 = teenCalculator.add(5, 45);
+console.log(result1);
+// OMG, the result is: 50. That's lame, I wanna go home.
+
+var result2 = teenCalculator.multiply(10, 8);
+console.log(result2);
+// OMG, the result is: 80. That's lame, I wanna go home.
+</code></pre>
+<ul>
+<li>Can you recall some methods We used before? Yea, right - <strong>array methods</strong>, or even <strong>console.log()</strong>!</li>
+<li>There are many other methods for <strong>arrays</strong>, <strong>strings</strong>, <strong>numbers</strong> etc. and You'll get to know many of them in a near future - check <strong>MDN</strong> to preview some of them</li>
+</ul>
+<br>
+<h3>CH2: Temperature converter 2.0</h3>
+<ul>
+<li>create <strong>object</strong> that will have <strong>two methods</strong></li>
+<li>one will be for converting <strong>Fahrenheit temperature to Celsius</strong></li>
+<li>second will be for converting <strong>Celsius temperature to Fahrenheit</strong></li>
+<li>both of them should <strong>return result</strong> - no console.log inside a method</li>
+<li>convert <strong>50 Fahrenheit to Celsius</strong></li>
+<li>convert <strong>25 Celsius to Fahrenheit</strong></li>
+<li>log results</li>
+<li><a href="https://codepen.io/Phhunkhouse/pen/vYBxjQx">solution here</a></li>
+</ul>
+
+      
+         <br>
+         <a href="/" class="cta cta--post"><span class="glyph-post">&lsaquo;</span> BACK HOME</a>
+      </main>
+
+      <footer class="footer u-wrapper">
+         <p class="footer__text"><a href="https://github.com/Phunkhouse/js-sessions-website" target="_blank" rel="noopener">Source code</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;David Krapka, 2019</p>
+      </footer>
+
+      <script>
+         var isIE = /MSIE \d|Trident.*rv:/.test(navigator.userAgent);
+
+         // Use async when it is not an IE (doesn't work properly)
+         if (!isIE) {
+
+            WebFontConfig = {
+               google: {
+                  families: ['Oswald|Roboto:300,500&display=swap']
+               }
+            };
+
+            (function (d) {
+               var wf = d.createElement('script'), s = d.scripts[0];
+               wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+               wf.async = true;
+               s.parentNode.insertBefore(wf, s);
+            })(document);
+
+            // If it's IE, create normal stylesheet and avoid &amp;
+         } else {
+
+            var styleElement = document.createElement("link");
+            styleElement.href = "https://fonts.googleapis.com/css?Oswald:400,600|Roboto:300,500&display=swap";
+            styleElement.rel = "stylesheet";
+            document.querySelector("body").appendChild(styleElement);
+
+         };
+      </script>
+      <script src="/js/highlight.pack.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+      <script src="/js/main.js"></script>
+   </body>
+</html>
