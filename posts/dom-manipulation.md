@@ -1,7 +1,7 @@
 ---
 pageTitle: DOM Manipulation
 date: 2019-08-29
-excerpt: TBD
+excerpt: Basic principles how to do things with HTML and CSS
 ---
 
 * **DOM - Document object model** - "connects web pages to scripts or programming languages by representing the structure of a document" (MDN)  - It basically allows you to manipulate HTML or CSS with JS or other relevant languages.
