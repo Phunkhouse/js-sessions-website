@@ -12,3 +12,4 @@ excerpt: Figure it out!
   * Put **new paragraph** with some lorem ipsum text (or cat ipsum) **under the cat cards**
   * **CHALLENGING:** **Add** 2 new catbros
   * **CHALLENGING:** Try to do first task without using **id's**
+  * [solution here](https://codepen.io/Phhunkhouse/pen/xxKYMxr)
