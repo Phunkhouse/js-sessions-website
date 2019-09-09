@@ -1,7 +1,7 @@
 ---
 pageTitle: DOM and better JS
 date: 2019-09-05
-excerpt: TBD
+excerpt: Can we write better JS? Can we manage to add click event? Yes, we can!
 ---
 
 ## Two hints to write better JS
