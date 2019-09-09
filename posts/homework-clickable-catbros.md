@@ -8,6 +8,6 @@ excerpt: Figure it out!
 * Use just the JS DOM manipulation
 * Send me the solution on Codepen individually (through Teams)
 * **TASK:**
-  * Set even listener for **click for every card**
+  * Set **click** event listener for **every card**
   * After click, script should figure out which card is clicked and grab **src attribute** from its **image**
-  * Append then this src value in a **paragraph below the cards**
+  * **Append** the **paragraph** with this src value **below the cards**
