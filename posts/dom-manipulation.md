@@ -1,5 +1,5 @@
 ---
-pageTitle: DOM Manipulation
+pageTitle: DOM manipulation
 date: 2019-08-29
 excerpt: Basic principles how to do things with HTML and CSS
 ---
