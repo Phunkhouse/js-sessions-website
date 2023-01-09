@@ -11,7 +11,7 @@
    "author": "David Krapka",
    "license": "ISC",
    "devDependencies": {
-      "@11ty/eleventy": "^0.8.3",
+      "@11ty/eleventy": "^1.0.2",
       "gulp": "^4.0.2",
       "gulp-sass": "^4.0.2",
       "node-sass": "^4.12.0"
